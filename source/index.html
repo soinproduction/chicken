@@ -110,7 +110,7 @@
               </div>
 
               <div class="first-box__info">
-                <button class="first-box__btn">зареєструвати код</button>
+                <button id="reg-code" class="first-box__btn">зареєструвати код</button>
                 <div class="first-box__links">
                   <a href="#" class="first-box__link">
                     <svg width="79" height="87">
@@ -361,7 +361,55 @@
     </footer>
   </div>
 
+  <div id="overlay" class="overlay">
 
+
+    <div id="modal" class="modal">
+      <form class="modal-form" action="#">
+
+        <button id="close-btn" class="close-btn">
+          <svg  width='23' height='23'>
+            <use href='img/sprite/sprite.svg#close'></use>
+          </svg>
+        </button>
+
+        <h2 class="modal-form__title">
+          РЕЄСТРАЦІЯ КОДУ
+        </h2>
+
+       <label class="modal-form__label" for="#">
+         <input type="text" placeholder="Вкажіть Прізвище Ім’я та По Батькові">
+       </label>
+
+       <label class="modal-form__label" for="#">
+        <input type="tel" placeholder="Номер телефону">
+      </label>
+
+      <label class="modal-form__label" for="#">
+        <input type="text" placeholder="Акцiйний код">
+      </label>
+
+      <div class="checkbox">
+        <label class="custom-checkbox">
+          <input type="checkbox" name="confirm" value="entry">
+          <span>Я даю згоду на обробку<a href="#">персональних даних</a></span>
+        </label>
+      </div>
+
+      <div class="g-recaptcha form-cap" data-sitekey="6Ld65jkbAAAAAP5TTRHFKoVR385YYc1B8TzgFnTm"></div>
+
+      <button class="modal-form__btn">
+        Зареєструвати код
+      </button>
+
+      </form>
+    </div>
+
+
+  </div>
+
+
+  <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
   <script src="js/common.min.js"></script>
 </body>
 
