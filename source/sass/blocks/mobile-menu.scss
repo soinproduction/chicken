@@ -1,0 +1,15 @@
+.burger-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  span {
+    width: 47px;
+    height: 6px;
+    background-color: #323232;
+    border-radius: 5px;
+
+    &:not(:first-child) {
+      margin-top: 7px;
+    }
+  }
+}

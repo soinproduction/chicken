@@ -1,0 +1,39 @@
+.footer-top__text {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+}
+
+
+.footer-bottom__link {
+  font-family: PT Sans;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: bold;
+  text-decoration-line: underline;
+
+  color: #FFFFFF;
+}
+
+.footer-bottom__text {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer {
+  padding: 0 0 46px;
+}
