@@ -16,71 +16,71 @@
 
 <body>
   <div class="gradient-bg">
-    <header>
-      <div class="container">
-        <div class="header">
-          <div class="header-top">
-            <a href="#" class="hader-link">
-              <img src="img/logo1.png" alt="logo">
-            </a>
-            <a href="#" class="hader-link">
-              <img src="img/logo2.png" alt="logo">
-            </a>
-            <a href="#" class="hader-link">
-              <img src="img/logo3.png" alt="logo">
-            </a>
 
-            <div class="logo-box">
+    <div class="full-page">
+      <header>
+        <div class="container">
+          <div class="header">
+            <div class="header-top">
               <a href="#" class="hader-link">
-                <img src="img/logo4.png" alt="logo">
+                <img src="img/logo1.png" alt="logo">
               </a>
               <a href="#" class="hader-link">
-                <img src="img/logo5.png" alt="logo">
+                <img src="img/logo2.png" alt="logo">
               </a>
+              <a href="#" class="hader-link">
+                <img src="img/logo3.png" alt="logo">
+              </a>
+
+              <div class="logo-box">
+                <a href="#" class="hader-link">
+                  <img src="img/logo4.png" alt="logo">
+                </a>
+                <a href="#" class="hader-link">
+                  <img src="img/logo5.png" alt="logo">
+                </a>
+              </div>
+
+              <button id="burger-btn" class="burger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+
             </div>
 
-            <button id="burger-btn" class="burger-btn">
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
+            <div id="header-menu" class="header-menu">
+
+              <button id="close" class="close">
+                <svg  width="43" height="43">
+                  <use href='img/sprite/sprite.svg#close'></use>
+                </svg>
+              </button>
+
+
+
+              <ul class="header-menu__list">
+                <li class="header-menu__item">
+                  <a class="header-menu__link" href="#">
+                    Переможці
+                  </a>
+                </li>
+                <li class="header-menu__item">
+                  <a class="header-menu__link" href="#">
+                    Офіційні правила акції в мережі VARUS
+                  </a>
+                </li>
+                <li class="header-menu__item">
+                  <a class="header-menu__link" href="#">
+                    Офіційні правила акції в мережі Копійка
+                  </a>
+                </li>
+              </ul>
+            </div>
 
           </div>
-
-          <div id="header-menu" class="header-menu">
-
-            <button id="close" class="close">
-              <svg  width="43" height="43">
-                <use href='img/sprite/sprite.svg#close'></use>
-              </svg>
-            </button>
-
-
-
-            <ul class="header-menu__list">
-              <li class="header-menu__item">
-                <a class="header-menu__link" href="#">
-                  Переможці
-                </a>
-              </li>
-              <li class="header-menu__item">
-                <a class="header-menu__link" href="#">
-                  Офіційні правила акції в мережі VARUS
-                </a>
-              </li>
-              <li class="header-menu__item">
-                <a class="header-menu__link" href="#">
-                  Офіційні правила акції в мережі Копійка
-                </a>
-              </li>
-            </ul>
-          </div>
-
         </div>
-      </div>
-    </header>
-
-    <main>
+      </header>
       <section class="first-sec">
         <div class="container">
 
@@ -137,6 +137,10 @@
 
         </div>
       </section>
+    </div>
+
+    <main>
+
 
       <section id="second" class="second-sec">
         <div class="container">
@@ -236,6 +240,10 @@
         </div>
       </section>
 
+
+    </main>
+
+    <div id="third">
       <section class="third-sec">
         <div class="container">
 
@@ -320,8 +328,9 @@
           </div>
         </div>
       </section>
-    </main>
-    <footer id="third">
+
+
+    <footer >
 
       <div class="container">
         <div class="footer">
@@ -359,6 +368,8 @@
 
 
     </footer>
+
+  </div>
   </div>
 
   <div id="overlay" class="overlay">
@@ -374,7 +385,7 @@
         </button>
 
         <h2 class="modal-form__title">
-          РЕЄСТРАЦІЯ КОДУ
+          РЕЄСТРАЦІЯ
         </h2>
 
        <label class="modal-form__label" for="#">
@@ -395,8 +406,6 @@
           <span>Я даю згоду на обробку<a href="#">персональних даних</a></span>
         </label>
       </div>
-
-      <div class="g-recaptcha form-cap" data-sitekey="6Ld65jkbAAAAAP5TTRHFKoVR385YYc1B8TzgFnTm"></div>
 
       <button class="modal-form__btn">
         Зареєструвати код

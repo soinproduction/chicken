@@ -12,25 +12,22 @@
 
 /* для элемента label, связанного с .custom-checkbox */
 .custom-checkbox>span {
-  align-items: center;
-  user-select: none;
-  font-family: Roboto;
+  font-family: PT Sans;
   font-style: normal;
   font-weight: 400;
-  font-size: 25px;
-  line-height: 29px;
-  color: #ffffff;
-
+  font-size: 20px;
+  line-height: 31px;
+  color: #FFFFFF;
 
   a {
-    font-family: Roboto;
+    font-family: PT Sans;
     font-style: normal;
     font-weight: 400;
-    font-size: 25px;
-    line-height: 29px;
-
+    font-size: 20px;
+    line-height: 31px;
     color: #0a7bfd;
     text-decoration: underline;
+    margin-left: 4px;
   }
 }
 
