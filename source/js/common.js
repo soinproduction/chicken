@@ -25,19 +25,6 @@ document.getElementById('overlay').addEventListener("click", function(e) {
     }
 });
 
-// const links = document.querySelectorAll(".next-page");
-
-// links.forEach((link) => {
-//   console.log(link);
-//   link.addEventListener('click', (e) => e.preventDefault());
-// });
-
-
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', function() {
   var links = document.links
   for (var i = 0, ie = links.length; i < ie; i++) f(links[i])
