@@ -22,23 +22,23 @@
         <div class="container">
           <div class="header">
             <div class="header-top">
-              <a href="#" class="hader-link">
+              <div class="hader-link">
                 <img src="img/logo1.png" alt="logo">
-              </a>
-              <a href="#" class="hader-link">
+              </div>
+              <div class="hader-link">
                 <img src="img/logo2.png" alt="logo">
-              </a>
-              <a href="#" class="hader-link">
+              </div>
+              <div class="hader-link">
                 <img src="img/logo3.png" alt="logo">
-              </a>
+              </div>
 
               <div class="logo-box">
-                <a href="#" class="hader-link">
+                <div class="hader-link">
                   <img src="img/logo4.png" alt="logo">
-                </a>
-                <a href="#" class="hader-link">
+                </div>
+                <div class="hader-link">
                   <img src="img/logo5.png" alt="logo">
-                </a>
+                </div>
               </div>
 
               <button id="burger-btn" class="burger-btn">
@@ -66,12 +66,12 @@
                   </a>
                 </li>
                 <li class="header-menu__item">
-                  <a class="header-menu__link" href="#">
+                  <a class="header-menu__link" target="_blank" href="1. Правила Акції Varus 15.06.21.pdf">
                     Офіційні правила акції в мережі VARUS
                   </a>
                 </li>
                 <li class="header-menu__item">
-                  <a class="header-menu__link" href="#">
+                  <a class="header-menu__link" target="_blank" href="1. Правила Акції Копейка 15.06.21.pdf">
                     Офіційні правила акції в мережі Копійка
                   </a>
                 </li>
@@ -230,7 +230,7 @@
             </div>
           </div>
 
-          <a href="#third" class="next-page">
+          <a href="#third" class="next-page next-page--third">
             <svg  width="52" height="51">
               <use href='img/sprite/sprite.svg#arrow'></use>
             </svg>
@@ -390,15 +390,45 @@
 
        <label class="modal-form__label" for="#">
          <input type="text" placeholder="Вкажіть Прізвище Ім’я та По Батькові">
+
+         <span class='error-form'> Ошибка</span>
        </label>
 
        <label class="modal-form__label" for="#">
         <input type="tel" placeholder="Номер телефону">
+        <span class='error-form'> Ошибка</span>
       </label>
 
       <label class="modal-form__label" for="#">
         <input type="text" placeholder="Акцiйний код">
+        <span class='error-form'> Ошибка</span>
       </label>
+
+      <select>
+
+        <option value="#">
+          Оберiть країну
+        </option>
+
+        <option value="#">
+          Украина
+        </option>
+
+        <option value="#">
+          Украина
+        </option>
+
+        <option value="#">
+          Украина
+        </option>
+
+        <option value="#">
+          Украина
+        </option>
+
+      </select>
+
+
 
       <div class="checkbox">
         <label class="custom-checkbox">
@@ -406,6 +436,20 @@
           <span>Я даю згоду на обробку<a href="#">персональних даних</a></span>
         </label>
       </div>
+
+
+      <div class="loader" id="circularG">
+        <div id="circularG_1" class="circularG"></div>
+        <div id="circularG_2" class="circularG"></div>
+        <div id="circularG_3" class="circularG"></div>
+        <div id="circularG_4" class="circularG"></div>
+        <div id="circularG_5" class="circularG"></div>
+        <div id="circularG_6" class="circularG"></div>
+        <div id="circularG_7" class="circularG"></div>
+        <div id="circularG_8" class="circularG"></div>
+      </div>
+
+
 
       <button class="modal-form__btn">
         Зареєструвати код
