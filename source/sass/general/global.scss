@@ -9,10 +9,12 @@ body {
   color: #000000;
 
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 *,

@@ -53,9 +53,10 @@
 
 .modal {
   z-index: -2;
+
+  max-width: 600px;
   height: 100%;
   max-height: 80%;
-  max-width: 600px;
   padding: 50px 40px;
 
   background-color: rgba(50, 61, 74, 0.761);
@@ -84,10 +85,10 @@
     text-align: left;
 
     span {
+      font-weight: 600;
+      font-size: 20px;
       font-family: PT Sans;
       color: #e31b1b;
-      font-size: 20px;
-      font-weight: 600;
     }
   }
 
@@ -109,6 +110,7 @@
     background-color: transparent;
     border: 2px solid rgb(252, 252, 252);
     border-radius: 20px;
+
     &::placeholder {
       /* identical to box height */
       display: flex;
@@ -164,51 +166,41 @@
   margin-top: 20px;
 }
 
+.select {
+  position:relative;
+}
 
 
-select {
-  outline: none;
-  display: inline-block;
-  box-sizing: border-box;
+.select-list {
+  position:absolute;
+  display:none;
+  left: 0;
+  bottom: -157px;
+  z-index: 100;
   width: 100%;
-  margin: 20px 0 0;
-  max-width: 100%;
-  padding: 0 15px;
-  position: relative;
+  background-color: #fff;
+  padding: 0 20px ;
+  max-height: 150px;
+  overflow-y: scroll;
+}
+
+
+.select-item {
   font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
+  font-weight: bold;
+  font-size: 24px;
   line-height: 31px;
   font-family: PT Sans;
-  color: #ffffff;
-  height: 57px;
+  color: #525252;
+  cursor: pointer;
 
-  background-color: transparent;
-  border: 2px solid #ffffff;
-  border-radius: 20px;
-
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-
-  background: url('../img/arrow_custom.svg') no-repeat right center;
-  background-position-x: calc(100% - 15px);
+  &:not(:first-child) {
+    margin-top: 15px;
+  }
 }
 
-
-
-
-select option {
-  font-weight: normal;
-  color: rgb(51, 51, 51);
-  padding: 10px 0;
-}
-*[dir="rtl"] select,
-:root:lang(ar) select,
-:root:lang(iw) select {
-  padding: 0.6em 0.8em 0.5em 1.4em;
-
-  background-position: left 0.7em top 50%, 0 0;
+.country:focus + .select-list {
+  display: block;
 }
 
 
@@ -221,174 +213,202 @@ select option {
 
 
 
-#circularG{
-	position:relative;
-	width: 33px;
-	height: 33px;
-	margin: auto;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#circularG {
+  position: relative;
+
+  width: 33px;
+  height: 33px;
+  margin: auto;
   margin-top: 10px;
 }
 
-.circularG{
-	position:absolute;
-	background-color:rgb(255, 255, 255);
-	width:8px;
-	height:8px;
-	border-radius:5px;
-		-o-border-radius:5px;
-		-ms-border-radius:5px;
-		-webkit-border-radius:5px;
-		-moz-border-radius:5px;
-	animation-name:bounce_circularG;
-		-o-animation-name:bounce_circularG;
-		-ms-animation-name:bounce_circularG;
-		-webkit-animation-name:bounce_circularG;
-		-moz-animation-name:bounce_circularG;
-	animation-duration:1.1s;
-		-o-animation-duration:1.1s;
-		-ms-animation-duration:1.1s;
-		-webkit-animation-duration:1.1s;
-		-moz-animation-duration:1.1s;
-	animation-iteration-count:infinite;
-		-o-animation-iteration-count:infinite;
-		-ms-animation-iteration-count:infinite;
-		-webkit-animation-iteration-count:infinite;
-		-moz-animation-iteration-count:infinite;
-	animation-direction:normal;
-		-o-animation-direction:normal;
-		-ms-animation-direction:normal;
-		-webkit-animation-direction:normal;
-		-moz-animation-direction:normal;
+.circularG {
+  position: absolute;
+
+  width: 8px;
+  height: 8px;
+
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  border-radius: 5px;
+  border-radius: 5px;
+
+  animation-name: bounce_circularG;
+  animation-name: bounce_circularG;
+  animation-name: bounce_circularG;
+  animation-name: bounce_circularG;
+  animation-name: bounce_circularG;
+  animation-duration: 1.1s;
+  animation-duration: 1.1s;
+  animation-duration: 1.1s;
+  animation-duration: 1.1s;
+  animation-duration: 1.1s;
+  animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-direction: normal;
+  animation-direction: normal;
+  animation-direction: normal;
+  animation-direction: normal;
+
+  border-radius: 5px;
+  border-radius: 5px;
 }
 
-#circularG_1{
-	left:0;
-	top:13px;
-	animation-delay:0.41s;
-		-o-animation-delay:0.41s;
-		-ms-animation-delay:0.41s;
-		-webkit-animation-delay:0.41s;
-		-moz-animation-delay:0.41s;
+#circularG_1 {
+  top: 13px;
+  left: 0;
+
+  animation-delay: 0.41s;
+  animation-delay: 0.41s;
+  animation-delay: 0.41s;
+  animation-delay: 0.41s;
+  animation-delay: 0.41s;
 }
 
-#circularG_2{
-	left:3px;
-	top:3px;
-	animation-delay:0.55s;
-		-o-animation-delay:0.55s;
-		-ms-animation-delay:0.55s;
-		-webkit-animation-delay:0.55s;
-		-moz-animation-delay:0.55s;
+#circularG_2 {
+  top: 3px;
+  left: 3px;
+
+  animation-delay: 0.55s;
+  animation-delay: 0.55s;
+  animation-delay: 0.55s;
+  animation-delay: 0.55s;
+  animation-delay: 0.55s;
 }
 
-#circularG_3{
-	top:0;
-	left:13px;
-	animation-delay:0.69s;
-		-o-animation-delay:0.69s;
-		-ms-animation-delay:0.69s;
-		-webkit-animation-delay:0.69s;
-		-moz-animation-delay:0.69s;
+#circularG_3 {
+  top: 0;
+  left: 13px;
+
+  animation-delay: 0.69s;
+  animation-delay: 0.69s;
+  animation-delay: 0.69s;
+  animation-delay: 0.69s;
+  animation-delay: 0.69s;
 }
 
-#circularG_4{
-	right:3px;
-	top:3px;
-	animation-delay:0.83s;
-		-o-animation-delay:0.83s;
-		-ms-animation-delay:0.83s;
-		-webkit-animation-delay:0.83s;
-		-moz-animation-delay:0.83s;
+#circularG_4 {
+  top: 3px;
+  right: 3px;
+
+  animation-delay: 0.83s;
+  animation-delay: 0.83s;
+  animation-delay: 0.83s;
+  animation-delay: 0.83s;
+  animation-delay: 0.83s;
 }
 
-#circularG_5{
-	right:0;
-	top:13px;
-	animation-delay:0.97s;
-		-o-animation-delay:0.97s;
-		-ms-animation-delay:0.97s;
-		-webkit-animation-delay:0.97s;
-		-moz-animation-delay:0.97s;
+#circularG_5 {
+  top: 13px;
+  right: 0;
+
+  animation-delay: 0.97s;
+  animation-delay: 0.97s;
+  animation-delay: 0.97s;
+  animation-delay: 0.97s;
+  animation-delay: 0.97s;
 }
 
-#circularG_6{
-	right:3px;
-	bottom:3px;
-	animation-delay:1.1s;
-		-o-animation-delay:1.1s;
-		-ms-animation-delay:1.1s;
-		-webkit-animation-delay:1.1s;
-		-moz-animation-delay:1.1s;
+#circularG_6 {
+  right: 3px;
+  bottom: 3px;
+
+  animation-delay: 1.1s;
+  animation-delay: 1.1s;
+  animation-delay: 1.1s;
+  animation-delay: 1.1s;
+  animation-delay: 1.1s;
 }
 
-#circularG_7{
-	left:13px;
-	bottom:0;
-	animation-delay:1.24s;
-		-o-animation-delay:1.24s;
-		-ms-animation-delay:1.24s;
-		-webkit-animation-delay:1.24s;
-		-moz-animation-delay:1.24s;
+#circularG_7 {
+  bottom: 0;
+  left: 13px;
+
+  animation-delay: 1.24s;
+  animation-delay: 1.24s;
+  animation-delay: 1.24s;
+  animation-delay: 1.24s;
+  animation-delay: 1.24s;
 }
 
-#circularG_8{
-	left:3px;
-	bottom:3px;
-	animation-delay:1.38s;
-		-o-animation-delay:1.38s;
-		-ms-animation-delay:1.38s;
-		-webkit-animation-delay:1.38s;
-		-moz-animation-delay:1.38s;
+#circularG_8 {
+  bottom: 3px;
+  left: 3px;
+
+  animation-delay: 1.38s;
+  animation-delay: 1.38s;
+  animation-delay: 1.38s;
+  animation-delay: 1.38s;
+  animation-delay: 1.38s;
 }
 
 
+@keyframes bounce_circularG {
+  0% {
+    transform: scale(1);
+  }
 
-@keyframes bounce_circularG{
-	0%{
-		transform:scale(1);
-	}
-
-	100%{
-		transform:scale(.3);
-	}
+  100% {
+    transform: scale(0.3);
+  }
 }
 
-@-o-keyframes bounce_circularG{
-	0%{
-		-o-transform:scale(1);
-	}
+@keyframes bounce_circularG {
+  0% {
+    transform: scale(1);
+  }
 
-	100%{
-		-o-transform:scale(.3);
-	}
+  100% {
+    transform: scale(0.3);
+  }
 }
 
-@-ms-keyframes bounce_circularG{
-	0%{
-		-ms-transform:scale(1);
-	}
+@keyframes bounce_circularG {
+  0% {
+    transform: scale(1);
+  }
 
-	100%{
-		-ms-transform:scale(.3);
-	}
+  100% {
+    transform: scale(0.3);
+  }
 }
 
-@-webkit-keyframes bounce_circularG{
-	0%{
-		-webkit-transform:scale(1);
-	}
+@keyframes bounce_circularG {
+  0% {
+    transform: scale(1);
+  }
 
-	100%{
-		-webkit-transform:scale(.3);
-	}
+  100% {
+    transform: scale(0.3);
+  }
 }
 
-@-moz-keyframes bounce_circularG{
-	0%{
-		-moz-transform:scale(1);
-	}
+@keyframes bounce_circularG {
+  0% {
+    transform: scale(1);
+  }
 
-	100%{
-		-moz-transform:scale(.3);
-	}
+  100% {
+    transform: scale(0.3);
+  }
 }
