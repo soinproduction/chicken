@@ -430,6 +430,8 @@
 
   .modal {
     padding: 20px 5px;
+    height: 100%;
+    overflow-y: scroll;
   }
 
   .modal-form__title {
