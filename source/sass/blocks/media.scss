@@ -309,7 +309,7 @@
 }
 
 
-@media (min-width: 320px) and (max-width: 575px) {
+@media (min-width: 280px) and (max-width: 575px) {
   body,
   html {
     width: 100%;
@@ -458,6 +458,40 @@
     top: -13px;
     right: 1px;
   }
+
+  .second-sec {
+    background-image: url(../../img/second-mobile.svg);
+    background-size: contain;
+    background-position: left center;
+    background-repeat: repeat;
+    position: relative;
+    z-index: 0;
+  }
+
+  .round-box {
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    grid-gap: 0 20px;
+  }
+
+  .header-menu {
+    top: 5px;
+    right: 0;
+  }
+
+  .first-sec {
+    padding-top: 0;
+  }
+
+  .third-sec {
+    background-image: url(../../img/third-mobile.svg);
+    background-size: contain;
+    background-position: center bottom;
+    background-repeat: repeat;
+    position:relative;
+    z-index: 0;
+  }
+
 
 
 
