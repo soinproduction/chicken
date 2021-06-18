@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // scrolling takes about 500ms
   function smoothScroll(distance) {
       // steps -> number of steps to the destination
-      var steps = 20, stepInterval = 25, i = 0, stepLength = distance / steps
+      var steps = 90, stepInterval = 1, i = 0, stepLength = distance / steps
       var currentPos = window.pageYOffset || document.documentElement.scrollTop
 
       // scroll to the next intermediate step until destination is reached
