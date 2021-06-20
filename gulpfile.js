@@ -115,7 +115,8 @@ gulp.task("copy", () => {
       "source/fonts/**/*.{woff,woff2}",
       "source/img/**/*.{png,jpg,jpeg,svg,gif}",
       "source/*.ico",
-      "source/*.pdf"
+      "source/*.pdf",
+      "source/*.txt"
     ], {
       base: "source"
     })

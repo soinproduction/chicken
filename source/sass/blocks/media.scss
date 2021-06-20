@@ -12,6 +12,11 @@
     padding: 0 15px;
   }
 
+  .main-titles {
+    font-weight: 700;
+    padding: 14px 0px;
+  }
+
   .round-wrapp {
     height: 230px;
     width: 230px;
@@ -184,6 +189,12 @@
     }
   }
 
+  .main-titles {
+    font-size: 37px;
+    line-height: 59px;
+    padding: 14px 0px;
+  }
+
 
 
 
@@ -200,6 +211,17 @@
   section {
     width: 100%;
     overflow-x: hidden;
+  }
+
+  .main-box {
+    max-width: 99%;
+  }
+
+  .main-titles {
+    width: 100%;
+    font-size: 36px;
+    line-height: 59px;
+    padding: 14px 0px;
   }
 
   .container {
@@ -322,6 +344,32 @@
     padding: 0 10px;
   }
 
+  .main-box {
+    max-width: 100%;
+  }
+
+  .main-box {
+    margin-top: 45px;
+    .first-box__links {
+      justify-content: space-around;
+      svg {
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+
+  .header-top--single {
+    padding-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .main-titles {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 14px 10px;
+  }
+
   .burger-btn {
     position: absolute;
     right: 10px;
@@ -430,8 +478,8 @@
 
   .modal {
     padding: 20px 5px;
-    height: 100%;
-    overflow-y: scroll;
+    // height: 100%;
+    // overflow-y: scroll;
   }
 
   .modal-form__title {

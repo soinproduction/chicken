@@ -1,0 +1,33 @@
+.main-titles {
+  width: 100%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 59px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 14px 72px;
+  margin-bottom: 90px;
+  background: #323D4A;
+  border-radius: 0px 20px 0 20px;
+}
+
+.main-box {
+  max-width: 73%;
+  margin: 0 auto;
+}
+
+.main-box {
+  margin-top: 97px;
+  .first-box__links {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.main-page {
+  min-height: 100vh;
+}
