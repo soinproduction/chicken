@@ -37,9 +37,9 @@ gulp.task("css", () => {
 
 gulp.task("js", () => {
   return gulp.src("source/js/**/*.js")
-    .pipe(plumber())
+    // .pipe(plumber())
     .pipe(sourcemap.init())
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(gulp.dest("build/js"))
     .pipe(rename(function (path) {
       path.extname = ".min.js";

@@ -20,8 +20,6 @@ document.getElementById("overlay").addEventListener("click", function (e) {
       document.getElementById("modal").classList.remove("modal--active"));
   });
 
-  $('#select-list').select2();
-
 
 // const SELECT_LIST = document.getElementById("select-list");
 // const INPUT = document.getElementById("country");
