@@ -355,7 +355,8 @@
   }
 
   .hader-link:nth-child(3) {
-    max-width: 150px;
+    min-width: 100px;
+    width: 26.04%;
   }
 
   .logo-box .hader-link:nth-child(1) {
