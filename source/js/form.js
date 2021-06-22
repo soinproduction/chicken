@@ -27,14 +27,15 @@ window.onload = () => {
 
     //Send form
     let 
-        formBlock = document.getElementsByTagName("form")[0];
+        formBlock = document.getElementsByTagName("form")[0],
+        formBlock_CodeInput = formBlock.querySelector("input[name='code']");
     
     formBlock.addEventListener("submit", async(event) => {
 
         event.preventDefault();
 
         grecaptcha.ready(function() {
-            grecaptcha.execute('6Ld65jkbAAAAAP5TTRHFKoVR385YYc1B8TzgFnTm', {action: 'submit'}).then(function(token) {
+            grecaptcha.execute('6LchsEcbAAAAAAP2kJyZ05L-V82IoKp9E43qU19M', {action: 'submit'}).then(function(token) {
 
                 //Values
                 let
@@ -68,7 +69,10 @@ window.onload = () => {
                         result_Block.style.color = "#44944A";
                     } else {
                         result_Block.style.color = "#F13A13";
-                        grecaptcha.reset();
+
+                        //Clear input
+                        formBlock_CodeInput.value = null;
+                        //grecaptcha.reset();
                     }
                     result_Block.innerHTML = (this.status >= 500) ? "Час очікування відповіді сервера минув" : this.response;
                 }

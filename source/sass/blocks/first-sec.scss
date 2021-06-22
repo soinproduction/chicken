@@ -22,6 +22,7 @@
   color: #FFFFFF;
   margin-bottom: 34px;
   transition: all .4s;
+  animation: animate_pulse 1.5s infinite;
 
   &:hover {
     transform: translateY(-5%) scale(1.05);
@@ -70,6 +71,7 @@
 .second-image {
   margin-bottom: 54px;
   margin-right: -40px;
+  animation: animate_slogan 2s ease infinite;
 }
 
 .first-box__inner {
@@ -99,13 +101,23 @@
 }
 
 .images-box {
+
+  .scaleX {
+    animation: scaleX 2s ease infinite;
+  }
+
+  .scaleY {
+    animation: scaleY 5s ease infinite;
+  }
+
   .round-wrapp {
     width: 128px;
     height: 128px;
 
-    img {
-      width: 50%;
-    }
+
+    // img {
+    //   width: 50%;
+    // }
 
     &:not(:first-child) {
       margin-left: 5px;

@@ -7,12 +7,15 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  transition: all .4s;
 
   svg {
     position: absolute;
+    z-index: -1;
     top: -33px;
     left: -16px;
     fill: #FC5000;
+    transition: all 1s;
   }
 
   .cerf {
@@ -58,6 +61,7 @@
   background-repeat: no-repeat;
   bottom: -50px;
   right: 25px;
+  transition: all .5s;
 
 
   p {
