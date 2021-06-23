@@ -3,13 +3,13 @@ const imageBox = document.getElementById("images");
 
 const images = imageBox.querySelectorAll(".round-wrapp");
 
-let delay = 1000;
+let delay = 350;
 
 [...images].map((img) => {
   setTimeout(() => {
     img.classList.add("round-wrapp--visible")
   }, delay);
-  delay += 1000;
+  delay += 350;
 });
 
 
