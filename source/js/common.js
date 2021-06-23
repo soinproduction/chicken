@@ -13,17 +13,6 @@ let delay = 350;
 });
 
 
-
-
-  console.log([...images]);
-
-
-
-
-
-
-
-
 (document.getElementById("burger-btn").onclick = function () {
   this.classList.toggle("burger-btn--active"),
     document.getElementById("header-menu").classList.toggle("header-menu--active");
@@ -40,11 +29,15 @@ let delay = 350;
   document.getElementById("overlay").classList.remove("overlay--active"),
   document.getElementById("modal").classList.remove("modal--active");
 }),
+
+
 document.getElementById("overlay").addEventListener("click", function (e) {
     "overlay" == e.target.id &&
       (this.classList.remove("overlay--active"),
       document.getElementById("modal").classList.remove("modal--active"));
   });
+
+  AOS.init();
 
 
 
