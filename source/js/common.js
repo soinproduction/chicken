@@ -1,3 +1,29 @@
+
+const imageBox = document.getElementById("images");
+
+const images = imageBox.querySelectorAll(".round-wrapp");
+
+let delay = 1000;
+
+[...images].map((img) => {
+  setTimeout(() => {
+    img.classList.add("round-wrapp--visible")
+  }, delay);
+  delay += 1000;
+});
+
+
+
+
+  console.log([...images]);
+
+
+
+
+
+
+
+
 (document.getElementById("burger-btn").onclick = function () {
   this.classList.toggle("burger-btn--active"),
     document.getElementById("header-menu").classList.toggle("header-menu--active");
@@ -21,31 +47,7 @@ document.getElementById("overlay").addEventListener("click", function (e) {
   });
 
 
-// const SELECT_LIST = document.getElementById("select-list");
-// const INPUT = document.getElementById("country");
 
-// INPUT.addEventListener("focus", function (e) {
-
-//     // SELECT_LIST.classList.add("select-list--active");
-
-//   //  if (INPUT != e.target.id && SELECT_LIST.classList.contains('select-list--active')) {
-//   //   SELECT_LIST.classList.remove("select-list--active");
-//   //   }
-
-//   if(SELECT_LIST.classList.contains('select-list--active'))
-//     SELECT_LIST.classList.remove('select-list--active');
-//   else
-//     SELECT_LIST.classList.add('select-list--active');
-
-// }),
-
-  // document.getElementById("country").addEventListener("input", function (e) {
-  //   selectList.classList.add("select-list--active");
-
-  //   if (selectList.classList.contains('select-list--active')) {
-  //     selectList.classList.remove("select-list--active")
-  //   }
-  // }),
 
 
 

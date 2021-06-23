@@ -102,17 +102,33 @@
 
 .images-box {
 
-  .scaleX {
-    animation: scaleX 2s ease infinite;
-  }
+  // .scaleX {
+  //   animation: scaleX 2s ease infinite;
+  // }
 
-  .scaleY {
-    animation: scaleY 5s ease infinite;
-  }
+  // .scaleY {
+  //   animation: scaleY 5s ease infinite;
+  // }
 
   .round-wrapp {
     width: 128px;
     height: 128px;
+    opacity: 0.00;
+    position: relative;
+    transition: 2s;
+    transform: translateY(-100%);
+
+    // z-index: 4;
+
+    &::after {
+      background: transparent;
+    }
+
+    &--visible {
+      opacity: 1.00;
+      transform: translateY(0);
+      box-shadow: -4px -5px 0 0 #fc5000, 0px 10px 13px 4px rgba(63, 47, 47, 0.43);
+    }
 
 
     // img {
