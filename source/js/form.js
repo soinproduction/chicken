@@ -14,7 +14,7 @@ window.onload = () => {
             //option.className = "select-item";
             option.innerText = country;
             option.value = country;
-            
+
             //Add element to autocomplete
             select_List.appendChild(option);
         }
@@ -26,10 +26,10 @@ window.onload = () => {
     $(".phone").mask("380999999999", { placeholder: "380_________" });
 
     //Send form
-    let 
+    let
         formBlock = document.getElementsByTagName("form")[0],
         formBlock_CodeInput = formBlock.querySelector("input[name='code']");
-    
+
     formBlock.addEventListener("submit", async(event) => {
 
         event.preventDefault();
